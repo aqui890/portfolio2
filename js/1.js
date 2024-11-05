@@ -25,8 +25,37 @@ window.addEventListener("scroll", () => {
     }
 });
 
+
 const loadMorebtn = document.querySelector(".btn-wrap a");
 
 loadMorebtn.addEventListener("click", function() {
     loadMorebtn.style.border = "none";
+})
+
+const linkfuture = document.querySelector(".project-future");
+const linkschoolweb = document.querySelector(".project-web");
+const linkalready = document.querySelector(".project-c");
+
+linkfuture.addEventListener("click", function() {
+    window.location.href = "https://aqui890.github.io/portfolio2";
+});
+
+linkschoolweb.addEventListener("click", function() {
+    window.location.href = "https://aqui890.github.io/swjb";
+});
+
+linkalready.addEventListener("click", function() {
+    window.location.href = "https://www.miricanvas.com/v/13t60p7";
+});
+
+
+const linkgithub = document.querySelector(".Gwrap");
+const linktistory = document.querySelector(".Bwrap");
+
+linkgithub.addEventListener("click", function() {
+    window.location.href = "https://github.com/aqui890";
+});
+
+linktistory.addEventListener("click", function() {
+    window.location.href = "https://aqui890.tistory.com/";
 })
