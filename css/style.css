@@ -331,11 +331,14 @@ html {
 @media (min-width:577px) and (max-width: 991px){
     .header-wrapper{
         justify-content: space-between;
-        
     }
 
     .hambuger{
         display: block;
+    }
+
+    .logo{
+        margin: 0;
     }
 
     #header .ul-wrap{
@@ -376,6 +379,7 @@ html {
     
     .logo{
         width: 100px;
+        margin: 0;
     }
 
     .hambuger{
