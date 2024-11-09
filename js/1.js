@@ -2,6 +2,7 @@ wheader = document.querySelector("#header");
 const logo = document.querySelector(".logo");
 const menu = document.querySelectorAll(".menu>li>a");
 const sign = document.querySelector(".sign-in");
+const hambugerbtn = document.querySelector(".hambuger");
 
 console.log(menu)
 
@@ -12,12 +13,14 @@ window.addEventListener("scroll", () => {
         header.style.boxShadow = "0px 5px 5px -2px gray";
         logo.style.color = "#161966";
         sign.style.color = "#161966";
+        hambugerbtn.style.color = "#161966";
         for (let i = 0; i < 4; i++) {
             menu[i].style.color = "#161966"
         }
     } else {
         logo.style.color = "white";
         sign.style.color = "white";
+        hambugerbtn.style.color = "white";
         for (let i = 0; i < 4; i++) {
             menu[i].style.color = "white"
         }

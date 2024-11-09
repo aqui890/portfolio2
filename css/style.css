@@ -15,11 +15,13 @@ li {
 
 html {
     scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+    /* 최후의 수단 */
 }
 
-.padding{
+/* .padding{
     padding: 50px 0;
-}
+} */
 
 .h1 {
     font-family: "Gasoek One", sans-serif;
@@ -37,6 +39,12 @@ html {
     display: flex;
     justify-content: center;
 }
+
+/* .yemin-wrapper .row{
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+} */
 
 .pm {
     margin-top: 60px;
@@ -80,14 +88,16 @@ html {
 }
 
 .logo {
-    /* width: 200px;
+    width: 100px;
     height: 80px;
-    text-align: center; */
+    text-align: center;
     font-size: 48px;
     font-weight: bold;
     transition: 0.3s;
     color: white;
-    /* margin-left: 400px; */
+
+
+    margin-left: 100px;
 }
 
 .logo:hover {
@@ -108,6 +118,26 @@ html {
 /* .menu li {
     width: 25%;
 } */
+
+.ul-inner-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.ulinner-inner-wrap{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.menu{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 700px;
+}
 
 .menu li a {
     font-size: 25px;
@@ -208,8 +238,8 @@ html {
 }
 
 .Skills {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     font-family: "Gasoek One", sans-serif;
     font-size: 55px;
     font-style: normal;
@@ -217,8 +247,8 @@ html {
 
 
 #Projects>div {
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 325px;
     /* border: 1px solid black; */
     border-radius: 15px;
     margin-bottom: 50px;
@@ -243,76 +273,14 @@ html {
     transform: translateY(5px);
 }
 
-@media (max-width: 576px) {   
-    .small-device
-
-    .hambuger{
-        display: block;
-    }
-
-    #header .menu{
-        display: none !important;
-    }
-
-    #header .sign-in{
-        display: none;
-    }
-
-    #Skills {
-        border-bottom: 1px solid #ccc;
-    }
-
-    #Skills section>div:nth-child(1) {
-        margin-left: 65px;
-    }
-
-    #Skills section>div:nth-child(2) {
-        margin-left: 65px;
-        margin-top: 30px;
-    }
-
-    #Skills section>div:nth-child(3) {
-        margin-top: 30px;
-        margin-left: 65px;
-        margin-bottom: 30px;
-    }
-
-    #Projects>div:nth-child(1) {
-        margin-left: 65px;
-    }
-
-    #Projects>div:nth-child(2) {
-        margin-left: 65px;
-    }
-
-    #Projects>div:nth-child(3) {
-        margin-left: 65px;
-    }
-
-    .blog{
-        margin-top: 50px;
-    }
-}
-
-@media (min-width: 577px) and (max-width: 767px){
+@media (min-width: 768px) and (max-width: 767px){
 
     .small-device{
         justify-content: space-between !important;
     }
 
-    .hambuger{
-        display: flex;
-    }
-
-    #header .menu{
-        display: none !important;
-    }
-
-    #header .ul-wrap ~ a{
-        display: none;
-    }
-
-    #Skills {
+    
+    /* #Skills {
         border-bottom: 1px solid #ccc;
     }
 
@@ -329,9 +297,9 @@ html {
         margin: 0 auto;
         margin-top: 30px;
         margin-bottom: 30px;
-    }
+    } */
 
-    #Projects>div:nth-child(1) {
+    /* #Projects>div:nth-child(1) {
         margin: 0 auto;
     }
 
@@ -357,7 +325,27 @@ html {
 
     .Gdiv-zip{
         flex-direction: column;
+    } */
+}
+
+@media (min-width:577px) and (max-width: 991px){
+    .header-wrapper{
+        justify-content: space-between;
+        
     }
+
+    .hambuger{
+        display: block;
+    }
+
+    #header .ul-wrap{
+        display: none !important;
+    }
+
+    /* #header .ul-wrap ~ a{
+        display: none;
+    } */
+
 }
 
 #GBwrap .github,
@@ -373,4 +361,67 @@ html {
 #GBwrap .github:hover,
 #GBwrap .blog:hover{
     transform: scale(0.9);
+}
+
+@media (max-width: 576px) {  
+    
+    .header-wrapper{
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    .header-wrapper{
+        display: block;
+    }
+    
+    .logo{
+        width: 100px;
+    }
+
+    .hambuger{
+        display: inline-block;
+    }
+
+    #header .ul-wrap{
+        display: none !important;
+    }
+
+    #header .sign-in{
+        display: none;
+    }
+
+    #Skills {
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* #Skills section>div:nth-child(1) {
+        margin-left: 65px;
+    }
+
+    #Skills section>div:nth-child(2) {
+        margin-left: 65px;
+        margin-top: 30px;
+    }
+
+    #Skills section>div:nth-child(3) {
+        margin-top: 30px;
+        margin-left: 65px;
+        margin-bottom: 30px;
+    } */
+
+    /* #Projects>div:nth-child(1) {
+        margin-left: 65px;
+    }
+
+    #Projects>div:nth-child(2) {
+        margin-left: 65px;
+    }
+
+    #Projects>div:nth-child(3) {
+        margin-left: 65px;
+    } */
+
+    /* .blog{
+        margin-top: 50px;
+    } */
 }
