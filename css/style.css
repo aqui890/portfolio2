@@ -222,15 +222,6 @@ html {
 
 /* e : load-more */
 
-.border {
-    margin: 0 auto;
-    /* width: 1200px;
-    height: 500px; */
-    text-align: center;
-    border: 1px solid black;
-    color: black;
-}
-
 #About-Me h1 {
     font-family: "Gasoek One", sans-serif;
     font-size: 55px;
@@ -277,6 +268,10 @@ html {
 
     .small-device{
         justify-content: space-between !important;
+    }
+
+    .mouse{
+        display: none !important;
     }
 
     
@@ -345,6 +340,10 @@ html {
         display: none !important;
     }
 
+    .mouse{
+        display: none !important;
+    }
+
     /* #header .ul-wrap ~ a{
         display: none;
     } */
@@ -361,10 +360,7 @@ html {
     transition: 0.3s;
 }
 
-#GBwrap .github:hover,
-#GBwrap .blog:hover{
-    transform: scale(0.9);
-}
+
 
 @media (max-width: 576px) {  
     
@@ -392,6 +388,10 @@ html {
 
     #header .sign-in{
         display: none;
+    }
+
+    .mouse{
+        display: none !important;
     }
 
     #Skills {
