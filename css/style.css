@@ -168,6 +168,7 @@ html {
     font-size: 55px;
     font-style: normal;
     color: white;
+
 }
 
 #main h1 {
@@ -403,32 +404,17 @@ html {
         border-bottom: 1px solid #ccc;
     }
 
-    /* #Skills section>div:nth-child(1) {
-        margin-left: 65px;
-    }
-
-    #Skills section>div:nth-child(2) {
-        margin-left: 65px;
-        margin-top: 30px;
-    }
-
-    #Skills section>div:nth-child(3) {
-        margin-top: 30px;
-        margin-left: 65px;
-        margin-bottom: 30px;
-    } */
-
-    /* #Projects>div:nth-child(1) {
-        margin-left: 65px;
+    #Projects>div:nth-child(1) {
+        margin: 0 auto;
     }
 
     #Projects>div:nth-child(2) {
-        margin-left: 65px;
+        margin: 0 auto;
     }
 
     #Projects>div:nth-child(3) {
-        margin-left: 65px;
-    } */
+        margin: 0 auto;
+    }
 
     /* .blog{
         margin-top: 50px;
