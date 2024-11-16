@@ -22,6 +22,19 @@
 </head>
 
 <body>
+    <div class="navB"
+        style="width:100%; height:100%; background-color: #222; opacity: 0.5; position: fixed; z-index: 999; transition: 0.5s;"></div>
+    <div class="navBar" style="width: 400px; height: 100%; z-index: 9999; background-color: white; position: fixed; right: 0; transition: 0.5s;">
+        <ul class="Mmenu d-flex flex-column justify-content-around" style="height: 350px; color : black; z-index: 99999;">
+            <li><button class="close-btn" style="background-color: white; border: none; font-size: 30px;">&#215;</button></li>
+            <li class="m-1 fw-bold"><a href="#About-Me" style="color: black;">About</a></li>
+            <li class="m-1 fw-bold"><a href="#Skills" style="color: black;">Skills</a></li>
+            <li class="m-1 fw-bold"><a href="#Projects" style="color: black;">Projects</a></li>
+            <li class="m-1 fw-bold"><a href="#GBwrap" style="color: black;">Blog</a></li>
+            <li><a href="signin.html" class="Msign-in fw-bold col-md-2 mt-2" style="color: black;">로그인</a></li>
+        </ul>
+        
+    </div>
     <!-- s : constainer -->
     <div class="wraper">
         <div class="inner-wrap container-fluid">
@@ -33,21 +46,53 @@
                             YM
                         </div>
                         <div class="ul-wrap col-md-8">
-                            <div class="ul-inner-wrap align-items-center">
-                                <div class="ulinner-inner-wrap">
-                                    <ul class="menu pt-3">
-                                        <li class="m-1 fw-bold"><a href="#About-Me">About</a></li>
-                                        <li class="m-1 fw-bold"><a href="#Skills">Skills</a></li>
-                                        <li class="m-1 fw-bold"><a href="#Projects">Projects</a></li>
-                                        <li class="m-1 fw-bold"><a href="#GBwrap">Blog</a></li>
+                            <div class="ul-inner-wrap d-flex align-items-center">
+                                <div class="ulinner-inner-wrap d-flex text-center">
+                                    <ul class="menu align-items-center">
+                                        <li class="m-1 fw-bold"><a href="#About-Me" style="color: white;">About</a></li>
+                                        <li class="m-1 fw-bold"><a href="#Skills" style="color: white;">Skills</a></li>
+                                        <li class="m-1 fw-bold"><a href="#Projects" style="color: white;">Projects</a></li>
+                                        <li class="m-1 fw-bold"><a href="#GBwrap" style="color: white;">Blog</a></li>
                                     </ul>
                                 </div>
-                                <a href="signin.html" class="sign-in fw-bold col-md-2 mt-2"
+                                <a href="signin.html" class="sign-in fw-bold col-md-2"
                                     style="color: white;">로그인</a>
                             </div>
                         </div>
 
                         <i class="fa-solid fa-bars hambuger col-sm-6 mt-2" style="color:white; font-size: 24px;"></i>
+
+
+
+                        <!-- <div class="Mmenu-column col-12">
+                            <div class="Mmenu-wrapper d-flex justify-content-end">
+                                <div class="Mmenu-flex-wrap">
+                                    <div class="Mmenu-flex d-flex justify-content-end border">
+                                        <div class="Mmenu-flex-inner-wrap">
+                                            <ul class="Mmenu d-flex flex-column border">
+                                                <li class="m-1 fw-bold fs-4"><a href="#About-Me"
+                                                        style="color:black;">About</a>
+                                                </li>
+                                                <hr>
+                                                <li class="m-1 fw-bold fs-4"><a href="#Skills"
+                                                        style="color:black;">Skills</a>
+                                                </li>
+                                                <hr>
+                                                <li class="m-1 fw-bold fs-4"><a href="#Projects"
+                                                        style="color:black;">Projects</a></li>
+                                                <hr>
+                                                <li class="m-1 fw-bold fs-4"><a href="#GBwrap"
+                                                        style="color:black;">Blog</a>
+                                                </li>
+                                                <hr>
+                                                <li><a href="signin.html" class="sign-in fw-bold col-md-2 mt-2"
+                                                        style="color: black;">로그인</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -108,15 +153,19 @@
                             <h2 style="display: none;">about-me</h2>
                             <div class="cell col-4">
                                 <i class="fa-solid fa-phone fs-4"></i>
-                                <p><span class="fs-5 fw-bold">연락처</span> <br> <span style="font-size: 14px;">010-9657-8235</span></p>
+                                <p><span class="fs-5 fw-bold">연락처</span> <br> <span
+                                        style="font-size: 14px;">010-9657-8235</span></p>
                             </div>
                             <div class="email col-4 ">
                                 <i class="fa-solid fa-envelope fs-3"></i>
-                                <p><span class="fs-5 fw-bold">이메일</span> <br> <span style="font-size: 14px;">akqwy980@gmail.com</span></p>
+                                <p><span class="fs-5 fw-bold">이메일</span> <br> <span class="PE"
+                                        style="font-size: 14px;">akqwy980@gmail.com</span> <span class="ME"><a
+                                            href="akqwy980@gmail.com">@유예민</a></span></p>
                             </div>
                             <div class="education col-4 ">
                                 <i class="fa-solid fa-pen fs-4"></i>
-                                <p><span class="fs-5 fw-bold">학력</span> <br> <span style="font-size: 14px;">수원정보과학 <br>고등학교 <br> (재학중)</span></p>
+                                <p><span class="fs-5 fw-bold">학력</span> <br> <span style="font-size: 14px;">수원정보과학고등학교
+                                        <br>(재학중)</span></p>
                             </div>
                         </div>
                     </div>
@@ -138,12 +187,10 @@
                                 <h3 class="mb-3"><b>language</b></h3>
                                 <div class="carousel-inner " style=" border-radius: 30px;">
                                     <div class="carousel-item active">
-                                        <img src="img/HTML.png" class="d-block" alt="HTMLimage"
-                                            style="width: 100%; ">
+                                        <img src="img/HTML.png" class="d-block" alt="HTMLimage" style="width: 100%; ">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/CSS3.png" class="d-block" alt="CSS3image"
-                                            style="width: 100%; ">
+                                        <img src="img/CSS3.png" class="d-block" alt="CSS3image" style="width: 100%; ">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="img/JavaScript.png" class="d-block w-100" alt="JavaScriptimage"
@@ -173,12 +220,10 @@
                                 <h3 class="mb-3"><b>front-end</b></h3>
                                 <div class="carousel-inner" style=" border-radius: 30px;">
                                     <div class="carousel-item active">
-                                        <img src="img/HTML.png" class="d-block" alt="HTMLimage"
-                                            style="width: 100%; ">
+                                        <img src="img/HTML.png" class="d-block" alt="HTMLimage" style="width: 100%; ">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/CSS3.png" class="d-block" alt="CSS3image"
-                                            style="width: 100%; ">
+                                        <img src="img/CSS3.png" class="d-block" alt="CSS3image" style="width: 100%; ">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="img/JavaScript.png" class="d-block" alt="JavaScriptimage"
@@ -243,7 +288,7 @@
                 <h1 class="col-12 title mt-5">Projects</h1>
                 <div class="col-12">
                     <section class="row mt-5 px-3" style="text-align: center; margin-bottom: 50px;">
-                        <div id="Projects" class=" d-flex justify-content-around gap-1 flex-wrap">
+                        <div id="Projects" class=" d-flex justify-content-around gap-5 flex-wrap">
                             <!-- s : future-web Project -->
                             <div class="col-12 col-lg-4 project-future">
                                 <h3 class="fw-bold mb-0 mt-3">나의 포트폴리오 만들기 <br>(미래유망)</h3>

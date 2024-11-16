@@ -15,7 +15,7 @@ li {
 
 html {
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     /* 최후의 수단 */
 }
 
@@ -31,7 +31,7 @@ html {
     justify-content: center;
 }
 
-.title{
+.title {
     font-family: "Bebas Neue", sans-serif;
     font-weight: bold;
     font-size: 55px;
@@ -58,7 +58,7 @@ html {
 .inner-wrap {
     width: 100%;
     height: 650px;
-    background-image: linear-gradient(to bottom, 	#000080, rgba(255, 255, 255, 0.3)), url(../img/bg.png);
+    background-image: linear-gradient(to bottom, #000080, rgba(255, 255, 255, 0.3)), url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -119,18 +119,18 @@ html {
     width: 25%;
 } */
 
-.ul-inner-wrap{
+.ul-inner-wrap {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-.ulinner-inner-wrap{
+.ulinner-inner-wrap {
     margin-left: 100px;
     margin-right: 100px;
 }
 
-.menu{
+.menu {
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
@@ -150,11 +150,33 @@ html {
     transform: scale(1.5);
 }
 
-.hambuger{
+.hambuger {
     width: 50px;
     height: 50px;
     display: none;
 }
+
+.navbar{
+    display: none;
+}
+
+.navB{
+    display: none;
+}
+
+.navBar{
+    transform: translateX(400px);
+}
+
+/* .Mmenu-wrapper{
+    display: none;
+}
+
+.Mmenu-flex{
+    width: 400px;
+    height: 100%;
+    
+} */
 
 /* s : main */
 #main {
@@ -193,12 +215,12 @@ html {
 /* e : main */
 
 /* s : load-more */
-.btn-wrap{
+.btn-wrap {
     display: flex;
     justify-content: center;
 }
 
-.btn-wrap a{
+.btn-wrap a {
     width: 100px;
     height: 50px;
     font-size: 35px;
@@ -209,14 +231,16 @@ html {
     animation: mouse 1s infinite ease-in-out;
 }
 
-@keyframes mouse{
-    0%{
+@keyframes mouse {
+    0% {
         transform: translateY(0px);
     }
-    50%{
+
+    50% {
         transform: translateY(10px);
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
     }
 }
@@ -227,6 +251,10 @@ html {
     font-family: "Gasoek One", sans-serif;
     font-size: 55px;
     font-style: normal;
+}
+
+.ME{
+    display: none;
 }
 
 .Skills {
@@ -265,17 +293,21 @@ html {
     transform: translateY(5px);
 }
 
-@media (min-width: 768px) and (max-width: 767px){
+@media (min-width: 768px) and (max-width: 767px) {
 
-    .small-device{
+    .small-device {
         justify-content: space-between !important;
     }
 
-    .mouse{
+    .mouse {
         display: none !important;
     }
 
-    
+    .ME {
+        display: none !important;
+    }
+
+
     /* #Skills {
         border-bottom: 1px solid #ccc;
     }
@@ -324,24 +356,28 @@ html {
     } */
 }
 
-@media (min-width:577px) and (max-width: 991px){
-    .header-wrapper{
+@media (min-width:577px) and (max-width: 991px) {
+    .header-wrapper {
         justify-content: space-between;
     }
 
-    .hambuger{
+    .hambuger {
         display: block;
     }
 
-    .logo{
-        margin: 0;
-    }
-
-    #header .ul-wrap{
+    .ME {
         display: none !important;
     }
 
-    .mouse{
+    .logo {
+        margin: 0;
+    }
+
+    #header .ul-wrap {
+        display: none !important;
+    }
+
+    .mouse {
         display: none !important;
     }
 
@@ -362,42 +398,50 @@ html {
 }
 
 #GBwrap .github:hover,
-#GBwrap .blog:hover{
+#GBwrap .blog:hover {
     transform: scale(0.9);
 }
 
 
 
-@media (max-width: 576px) {  
-    
-    .header-wrapper{
+@media (max-width: 576px) {
+
+    .header-wrapper {
         justify-content: space-between;
         margin: 0 10px;
     }
 
-    .header-wrapper{
+    .header-wrapper {
         display: block;
     }
-    
-    .logo{
+
+    .logo {
         width: 100px;
         margin: 0;
     }
 
-    .hambuger{
+    .hambuger {
         display: inline-block;
     }
 
-    #header .ul-wrap{
+    #header .ul-wrap {
         display: none !important;
     }
 
-    #header .sign-in{
+    #header .sign-in {
         display: none;
     }
 
-    .mouse{
+    .mouse {
         display: none !important;
+    }
+
+    .PE {
+        display: none;
+    }
+
+    .ME {
+        display: block !important;
     }
 
     #Skills {

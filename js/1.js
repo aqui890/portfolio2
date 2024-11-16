@@ -28,6 +28,25 @@ window.addEventListener("scroll", () => {
     }
 });
 
+const navB = document.querySelector(".navB");
+const Mnav = document.querySelector(".navBar");
+const closeBtn = document.querySelector(".close-btn");
+
+hambugerbtn.addEventListener("click", function() {
+    navB.style.display = "block";
+    Mnav.style.transform = "translateX(0)"
+})
+
+navB.addEventListener("click", function() {
+    navB.style.display  = "none";
+    Mnav.style.transform = "translateX(400px)"
+})
+
+closeBtn.addEventListener("click", function() {
+    navB.style.display = "none";
+    Mnav.style.transform = "translateX(400px)"
+})
+
 
 const loadMorebtn = document.querySelector(".btn-wrap a");
 
