@@ -27,24 +27,31 @@ window.addEventListener("scroll", () => {
         header.setAttribute("style", "background: transparent;");
     }
 });
-
 const navB = document.querySelector(".navB");
 const Mnav = document.querySelector(".navBar");
 const closeBtn = document.querySelector(".close-btn");
 
+const menus = document.querySelectorAll(".Mmenu-content");
+menus.forEach(menu => {
+    menu.addEventListener("click", function() {
+        navB.style.display = "none";
+        Mnav.style.transform = "translateX(400px)";
+    })
+})
+
 hambugerbtn.addEventListener("click", function() {
     navB.style.display = "block";
-    Mnav.style.transform = "translateX(0)"
+    Mnav.style.transform = "translateX(0)";
 })
 
 navB.addEventListener("click", function() {
     navB.style.display  = "none";
-    Mnav.style.transform = "translateX(400px)"
+    Mnav.style.transform = "translateX(400px)";
 })
 
 closeBtn.addEventListener("click", function() {
     navB.style.display = "none";
-    Mnav.style.transform = "translateX(400px)"
+    Mnav.style.transform = "translateX(400px)";
 })
 
 
