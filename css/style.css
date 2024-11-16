@@ -58,7 +58,7 @@ html {
 .inner-wrap {
     width: 100%;
     height: 650px;
-    background-image: linear-gradient(to bottom, #000080, rgba(255, 255, 255, 0.3)), url(../img/bg.png);
+    background-image: linear-gradient(to bottom, #000080, rgba(255, 255, 255, 0.3)), url(../img/bg-min.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
