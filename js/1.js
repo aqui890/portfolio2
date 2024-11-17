@@ -61,9 +61,9 @@ loadMorebtn.addEventListener("click", function() {
     loadMorebtn.style.border = "none";
 })
 
-const linkfuture = document.querySelector(".project-future");
-const linkschoolweb = document.querySelector(".project-web");
-const linkalready = document.querySelector(".project-c");
+const linkfuture = document.querySelector(".fp");
+const linkschoolweb = document.querySelector(".sf");
+const linkalready = document.querySelector(".sc");
 
 linkfuture.addEventListener("click", function() {
     window.location.href = "https://aqui890.github.io/portfolio2";
