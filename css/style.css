@@ -526,13 +526,15 @@ html {
         margin: 0 auto;
     }
 
-    .sf-link{
-        padding-right: 50px;
-    }
+    
 
-    .sc-link{
+    /* .sf-link{
         padding-right: 50px;
-    }
+    } */
+
+    /* .sc-link{
+        padding-right: 50px;
+    } */
 
     .date-wrap{
         margin-right: 10px;
