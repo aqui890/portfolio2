@@ -268,6 +268,18 @@ html {
 
 /* e : load-more */
 
+#About-Me{
+    scroll-margin-top: 200px;
+}
+
+#Skills{
+    scroll-margin-top: 200px;
+}
+
+#Projects{
+    scroll-margin-top: 200px;
+}
+
 #About-Me h1 {
     font-family: "Gasoek One", sans-serif;
     font-size: 55px;
