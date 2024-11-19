@@ -24,6 +24,11 @@
     font-family: "noto-kr-normal";
 }
 
+.noto-kr-bold{
+    font-family: "noto-kr";
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
     display: block;
