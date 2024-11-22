@@ -129,6 +129,10 @@ html {
     cursor: pointer;
 }
 
+nav.row{
+    flex-wrap: nowrap;
+}
+
 /* .menu {
     /* width: 400px;
     height: 100px;
@@ -446,7 +450,7 @@ html {
     } */
 }
 
-@media (min-width:577px) and (max-width: 991px) {
+@media (min-width:577px) and (max-width: 992px) {
     .header-wrapper {
         justify-content: space-between;
     }
